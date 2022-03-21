@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jūrmalas ūdens</title>
+  <!-- Stylesheets -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link rel=”stylesheet” href=”https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css”>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="images/jurmalas_favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/jurmalas_favicon.png" type="image/x-icon">
+
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--mapes faili -->
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <!--
+  <style>
+      #map {position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+  </style>
+  -->
+</head>
+<body class="hidden-bar-wrapper">
+
+<div class="page-wrapper">
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Header Top -->
+    <div class="header-top">
+      <div class="auto-container clearfix">
+
+        <div class="pull-left">
+          <ul class="info">
+            <li><a href="tel:+37167811362"><img src="https://img.icons8.com/small/16/ffffff/phone.png" alt=""/>+37167811362</a></li>
+            <li><a href="mailto:info@jurmalasudens.lv"><span class="icon flaticon-email-2"></span>info@jurmalasudens.lv</a></li>
+          </ul>
+        </div>
+
+        <div class="pull-right clearfix">
+          <!-- Social Box -->
+          <ul class="social-box">
+            <li><a href="https://www.facebook.com/" class="fa fa-facebook-f"></a></li>
+            <li><a href="https://www.twitter.com/" class="fa fa-twitter"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Header Lower -->
+    <div class="header-lower">
+      <div class="auto-container clearfix">
+        <div class="inner-container clearfix">
+
+          <div class="pull-left logo-box">
+            <div class="logo"><a href="index.php"><img src="images/logojurmala2.jpg" alt="" title=""></a></div>
+          </div>
+          <div class="nav-outer clearfix">
+
+            <!-- Mobile Navigation Toggler -->
+            <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+            <!-- Main Menu -->
+            <nav class="main-menu show navbar-expand-md">
+              <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+
+              <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                <ul class="navigation clearfix">
+                  <li><a href="index.php">Sākums</a></li>
+                  <li class="dropdown"><a href="#">Par mums</a>
+                    <ul>
+                      <li><a href="kapitalsabiedriba.html">Kaptiālsabiedrība</a></li>
+                      <li><a href="valde.html">Valde</a></li>
+                      <li><a href="struktura.html">Struktūra</a></li>
+                      <li><a href="strategija-politika.html">Stratēģija un politika</a></li>
+                      <li><a href="parskati-finanses.html">Pārskati un finanses</a></li>
+                      <li><a href="vesture.html">Vēsture</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#">Klientiem</a>
+                    <ul>
+                      <li><a href="tarifi.html">Tarifi</a></li>
+                      <li><a href="norekini.html">Norēķini</a></li>
+                      <li><a href="#">Pakalpojumi</a></li>
+                      <li><a href="#">Ūdens kvalitāte</a></li>
+                      <li><a href="#">Nodot rādijumu</a></li>
+                      <li><a href="#">Iesnieguma veidlapas</a></li>
+                      <li><a href="#">Lietošanas noteikumi</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#">Aktualitātes</a>
+                    <ul>
+                      <li><a href="aktualitates.html">Visas aktualitātes</a></li>
+                      <li><a href="#">Projekti</a></li>
+                      <li><a href="not-found.html">Error page</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="kontakti.html">Kontakti</a></li>
+                </ul>
+              </div>
+
+            </nav>
+            <!-- Main Menu End-->
+
+            <!-- Outer Box -->
+            <div class="outer-box clearfix">
+
+              <!--Search Box , aiznemos js-->
+              <div class="search-box-outer">
+                <div class="search-box-btn"><span class="fa fa-search"></span></div>
+              </div>
+
+            </div>
+            <!-- End Outer Box -->
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Header Lower -->
+
+    <!-- Sticky Header  -->
+    <div class="sticky-header">
+      <div class="auto-container clearfix">
+        <!-- Logo -->
+        <div class="logo pull-left">
+          <a href="index.php" title=""><img src="images/jurmalas_logo_small.jpg" alt="" title=""></a>
+        </div>
+
+        <!--Right Col-->
+        <div class="pull-right">
+          <!-- Main Menu -->
+          <nav class="main-menu">
+
+          </nav><!-- Main Menu End-->
+
+          <!-- Outer Box -->
+          <div class="outer-box clearfix">
+
+            <!--Search Box-->
+            <div class="search-box-outer">
+              <div class="search-box-btn"><span class="fa fa-search"></span></div>
+            </div>
+
+          </div>
+          <!-- End Outer Box -->
+
+        </div>
+      </div>
+    </div><!-- End Sticky Menu -->
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+      <div class="menu-backdrop"></div>
+      <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
+
+      <nav class="menu-box">
+        <div class="nav-logo"><a href="index.php"><img src="images/jurmalas_udens_logo.png" alt="" title=""></a></div>
+        <div class="menu-outer"><</div>
+      </nav>
+    </div><!-- End Mobile Menu -->
+
+  </header>
+  <!-- End Main Header -->
+  <!-- Page Title -->
+  <section class="page-title" style="background-image: url(images/main-slider/jurmalasudensslider1.jpg)">
+    <div class="auto-container">
+      <h2>Jūrmalas ūdens</h2>
+      <ul class="bread-crumb clearfix">
+        <li><a href="index.php">Sazināties</a></li>
+        <li><a href="index.php">Aktualitātes</a></li>
+      </ul>
+    </div>
+  </section>
+  <!--End Page Title-->
+  <!-- Main Section -->
+  <!--<section class="main-slider">
+
+      <div class="main-slider-carousel owl-carousel owl-theme"></div>
+
+      <div class="color-layer-one"></div>
+      <div class="color-layer-two"></div>
+      <div class="color-layer-three"></div> -->
+  <!--<div class="auto-container">-->
+
+  <!-- Content Boxed -->
+  <!--<div class="content-boxed">
+      <div class="inner-box">
+          <div class="title">Jūrmalas ūdens</div>
+          <h1>Ūdens tā ir dzīvība- nāc un apskati piedāvājumus.</h1>
+          <div class="btns-box">
+              <a href="kapitalsabiedriba.html" class="theme-btn btn-style-two"><span class="txt">Piedāvājumi<i class="lnr lnr-arrow-right"></i></span></a>
+              <a href="contact.html" class="theme-btn btn-style-three"><span class="txt">Sazināties<i class="lnr lnr-arrow-right"></i></span></a>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+-->
+  <!-- End Main Section -->
+
+  <!-- Testimonial Section -->
+  <!-- Map
+  <div id="map">
+      <a href="https://www.maptiler.com" style="position:absolute;left:10px;bottom:10px;z-index:999;"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
+  </div>
+  <p><a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a></p>
+  <script>
+      var map = L.map('map').setView([46.33682, 22.89551], 4);
+      L.tileLayer('https://api.maptiler.com/maps/streets/tiles.json?key=nVeYedU7CPXNp7QhYMtp',{
+          tileSize: 512,
+          zoomOffset: -1,
+          minZoom: 1,
+          attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+          crossOrigin: true
+      }).addTo(map);
+  </script>
+   Map end -->
+</div>
+<!-- End Testimonial Section -->
+<div class="auto-container">
+  <!-- Sec Title -->
+  <div class="sec-title centered">
+    <h2>Interaktīvā mape</h2>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2174.773083182361!2d23.82270371597816!3d56.969819380896354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eedce5b87e4fc3%3A0x582418f9e0fc6adc!2zSsWrcm1hbGFzIMWrZGVucyAsIFNJQQ!5e0!3m2!1slv!2slv!4v1644313091966!5m2!1slv!2slv" width="1150" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<!-- Services Section -->
+<section class="services-section" style="background-image: url(images/background/pattern-2.png)">
+  <div class="auto-container">
+
+    <!-- Upper Section -->
+    <div class="upper-section">
+      <div class="row clearfix">
+        <!-- Service block -->
+        <div class="service-block col-lg-4 col-md-6 col-sm-12">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <span class="border-one"></span>
+            <span class="border-two"></span>
+            <h4><a href="#">Nodot rādijumu</a></h4>
+            <div class="text">Lorem ipsum dolor sit amet them consec tetura dipiscing elit sed doeiumod Donec modern solution quam felis.</div>
+            <div class="icon"><img src="images/icons/nodot_rādijumu.png" alt="" /></div>
+            <a class="services" href="#">Pakalpojumi <span class="arrow lnr lnr-arrow-right"></span></a>
+          </div>
+        </div>
+
+        <!-- Service block -->
+        <div class="service-block active col-lg-4 col-md-6 col-sm-12">
+          <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <span class="border-one"></span>
+            <span class="border-two"></span>
+            <h4><a href="#">Līguma lauzšana</a></h4>
+            <div class="text">Lorem ipsum dolor sit amet them consec tetura dipiscing elit sed doeiumod Donec modern solution quam felis.</div>
+            <div class="icon"><img src="images/icons/liguma_lauzsana.jpg" alt="" /></div>
+            <a class="services" href="#">Pakalpojumi<span class="arrow lnr lnr-arrow-right"></span></a>
+          </div>
+        </div>
+
+        <!-- Service block -->
+        <div class="service-block col-lg-4 col-md-6 col-sm-12">
+          <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <span class="border-one"></span>
+            <span class="border-two"></span>
+            <h4><a href="#">Līguma pieslēgšana</a></h4>
+            <div class="text">Lorem ipsum dolor sit amet them consec tetura dipiscing elit sed doeiumod Donec modern solution quam felis.</div>
+            <div class="icon"><img src="images/icons/liguma_noslegsana.jpg" alt="" /></div>
+            <a class="services" href="#">Pakalpojumi <span class="arrow lnr lnr-arrow-right"></span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Upper Section -->
+
+    <!-- Lower Section -->
+    <div class="lower-section">
+      <div class="row clearfix">
+
+        <!-- Image Column -->
+        <div class="image-column col-lg-6 col-md-12 col-sm-12">
+          <div class="inner-column titlt" data-tilt data-tilt-max="3">
+            <div class="color-layer"></div>
+            <div class="border-layer"></div>
+            <div class="image">
+              <img src="images/resource/aktualitate1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="content-column col-lg-6 col-md-12 col-sm-12">
+          <div class="inner-column">
+            <!-- Sec Title -->
+            <div class="sec-title">
+              <div class="title">Aktualitātes</div>
+              <h2>“Nesēdi uz šmuces ar laika degli”</h2>
+            </div>
+            <div class="bold-text">Vides aizsardzības un reģionālās attīstības ministrija ielūdz pašvaldību speciālistus un iedzīvotājus uz attālinātu vebināru par decentralizētās notekūdeņu savākšanas un attīrīšanas sistēmas sakārtošanu. </div>
+            <div class="text">Šī gada 14. oktobrī tiek uzsākta kampaņa “Nesēdi uz šmuces ar laika degli”, lai aicinātu iedzīvotājus sakārtot un reģistrēt savus decentralizētās notekūdeņu sistēmas objektus.</div>
+            <a href="kapitalsabiedriba.html" class="theme-btn btn-style-four"><span class="txt">Lasīt vairāk <i class="lnr lnr-arrow-right"></i></span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Lower Section -->
+  </div>
+</section>
+<!-- End Services Section -->
+<!-- Appointment Section -->
+<section class="appointment-section" style="background-image: url(images/background/pattern-1.png)">
+  <div class="auto-container">
+    <div class="row clearfix">
+
+      <!-- Title Column -->
+      <div class="title-column col-lg-6 col-md-12 col-sm-12">
+        <div class="inner-column">
+          <h3>Sazinies ar mūsu darbiniekiem.</h3>
+        </div>
+      </div>
+
+      <!-- Form Column -->
+      <div class="form-column col-lg-6 col-md-12 col-sm-12">
+        <div class="inner-column">
+          <div class="appointment-form">
+            <form method="post" action="kontakti.html">
+              <div class="form-group">
+                <label>
+                  <input type="email" name="email" value="" placeholder="Ievadiet savu e-pastu" required="">
+                </label>
+                <button type="submit" class="theme-btn btn-style-two"><span class="txt">Sazināties <i class="lnr lnr-arrow-right"></i></span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Appointment Section -->
+<!-- Internet Section -->
+<section class="internet-section" style="background-image: url(images/background/servicepipeeee.jpg)">
+  <div class="auto-container">
+    <div class="clearfix">
+      <div class="content-column">
+        <h2>Izvēlies mūsu tarifu un pieslēdz ūdenapgādi un kanalizāciju.</h2>
+        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eius to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims ad minim veniam. Aenean massa. Cum sociis natoque penatibus et magnis dis partu rient to montes.Aene an massa.</div>
+        <div class="price">1.15€ un 2.26€ par vienu kubikmetru (EUR/kub.m)</div>
+        <a href="kapitalsabiedriba.html" class="theme-btn btn-style-four"><span class="txt">Lasīt vairāk <i class="lnr lnr-arrow-right"></i></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Internet Section -->
+<!-- News Section -->
+<section class="news-section" style="background-image: url(images/background/6.jpg)">
+  <div class="auto-container">
+    <!-- Sec Title -->
+    <div class="sec-title centered">
+      <div class="separator"></div>
+      <h2>Projekti</h2>
+    </div>
+    <!-- End Sec Title -->
+
+    <div class="row clearfix">
+
+      <!-- News Block -->
+      <div class="news-block col-lg-4 col-md-6 col-sm-12">
+        <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+          <div class="image">
+            <a href="#"><img src="images/projekts1.jpg" alt="" /></a>
+          </div>
+          <div class="lower-content">
+            <ul class="post-meta">
+              <li><span class="icon flaticon-user"></span>Admin</li>
+              <li>23.02.2022</li>
+            </ul>
+            <h5><a href="#">Projekts kaut kur Jūrmalā</a></h5>
+            <a href="#" class="theme-btn btn-style-four"><span class="txt">Lasīt vairāk</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- News Block -->
+      <div class="news-block col-lg-4 col-md-6 col-sm-12">
+        <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+          <div class="image">
+            <a href="#"><img src="images/projekts2.jpg" alt="" /></a>
+          </div>
+          <div class="lower-content">
+            <ul class="post-meta">
+              <li><span class="icon flaticon-user"></span>Admin</li>
+              <li>23.02.2022</li>
+            </ul>
+            <h5><a href="#">Projekts kaut kur Jūrmalā 2</a></h5>
+            <a href="#" class="theme-btn btn-style-four"><span class="txt">Lasīt vairāk</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- News Block -->
+      <div class="news-block col-lg-4 col-md-6 col-sm-12">
+        <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+          <div class="image">
+            <a href="#"><img src="images/projekts3.jpg" alt="" /></a>
+          </div>
+          <div class="lower-content">
+            <ul class="post-meta">
+              <li><span class="icon flaticon-user"></span>Admin</li>
+              <li>23.02.2022</li>
+            </ul>
+            <h5><a href="#">Projekts kaut kur Jūrmalā 3</a></h5>
+            <a href="#" class="theme-btn btn-style-four"><span class="txt">Lasīt vairāk</span></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- End News Section -->
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="auto-container">
+    <div class="inner-container" style="background-image: url(images/background/pattern-11.png)">
+      <div class="row clearfix">
+
+        <!-- Title Column -->
+        <div class="title-column col-lg-6 col-md-12 col-sm-12">
+          <div class="inner-column">
+            <h3>Apstiprināt paziņojumu sūtīšanu</h3>
+            <div class="text">Saņemiet paziņojumus par remontēšanas darbiem vai aktualitātēm uz jūsu e-pastu.</div>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="form-column col-lg-6 col-md-12 col-sm-12">
+          <div class="inner-column">
+            <div class="newsletter-form">
+              <form method="post" action="kontakti.html">
+                <div class="form-group">
+                  <label>
+                    <input type="email" name="email" value="" placeholder="Jūsu e-pasta adrese" required="">
+                  </label>
+                  <button type="submit" class="theme-btn btn-style-five"><span class="txt">Abonēt</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End CTA Section -->
+
+<!-- Main Footer -->
+<footer class="main-footer">
+  <div class="pattern-layer-one" style="background-image: url(images/background/pattern-12.png)"></div>
+  <div class="pattern-layer-two" style="background-image: url(images/background/pattern-13.png)"></div>
+  <div class="auto-container">
+    <div class="widgets-section">
+      <div class="logo">
+        <a href="index.php"><img src="images/jurmalasudensnobg2.png" alt="" /></a>
+      </div>
+      <ul class="contact-info-list">
+        <li>
+          <span class="icon"><img src="images/icons8-phone-64.png" alt="" /></span>
+          <a href="tel:80205006"> ⠀80205006</a><br>
+          <a href="tel:80205004"> ⠀80205004</a>
+        </li>
+        <li>
+          <span class="icon"><img src="images/icons8-mail-64.png" alt="" /></span>
+          <a href="mailto:info@jurmalasudens.lv"> ⠀info@jurmalasudens.lv</a><br>
+          <a href="https://jurmalasudens.lv/"> ⠀www.jurmalasudens.lv</a>
+        </li>
+        <li>
+          <span class="icon"><img src="images/icons8-map-marker-64.png" alt="" /></span>
+          Promenādes iela Nr.1a <br> Jūrmala LV-2015
+        </li>
+      </ul>
+
+      <!-- Social Box -->
+      <ul class="social-box">
+        <li><a href="https://www.facebook.com/" class="fa fa-facebook-f"></a></li>
+        <li><a href="https://www.twitter.com/" class="fa fa-twitter"></a></li>
+      </ul>
+
+    </div>
+
+  </div>
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <div class="auto-container">
+      <div class="copyright">&copy; 2022 Jūrmalas Ūdens. All Rights Reserved. Designed By Nilins</div>
+    </div>
+  </div>
+</footer>
+<!-- End Main Footer -->
+<!--End pagewrapper-->
+
+<!-- Search Popup / meklēšana -->
+<div class="search-popup">
+  <div class="color-layer"></div>
+  <button class="close-search"><span class="fa fa-arrow-up"></span></button>
+  <form method="post" action="#">
+    <div class="form-group">
+      <label>
+        <input type="search" name="search-field" value="" placeholder="Meklēt" required="">
+      </label>
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+  </form>
+</div>
+<!-- End Header Search -->
+
+<!-- Scroll To Top -->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/tilt.jquery.min.js"></script>
+<script src="js/jquery.paroller.min.js"></script>
+<script src="js/nav-tool.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
